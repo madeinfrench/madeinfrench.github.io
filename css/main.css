@@ -115,6 +115,16 @@ textarea {
 }
 
 @font-face {
+    font-family: 'Rouge-Script';
+    src:url('../fonts/Rouge-Script.woff') format('woff'),
+        url('../fonts/Rouge-Script.svg#Rouge-Script') format('svg'),
+        url('../fonts/Rouge-Script.eot'),
+        url('../fonts/Rouge-Script.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'entypo-social';
     src: url('../fonts/entypo-social.eot');
     src: url('../fonts/entypo-social.eot?#iefix') format('embedded-opentype'),
@@ -159,14 +169,17 @@ white : rgba(244,244,244,1);
 
 
 /* BODY */
- 
- h1 {
-    font-family: 'Museo 500';
- }
 
+.sectionH1 {
+    font-family: 'Museo 500';
+    margin: 0em 0.67em;
+    padding-top: 0.67em;
+    display: inline-block;
+} 
+ 
  .boxTransparentWhite {
     background-color: rgba(244,244,244,.8);
-    padding: 0.25em;
+    padding: 1.5em;
  }
 
 /*.boxTransparent {
@@ -283,16 +296,21 @@ nav a:hover {
 #brand {
     top: 15%;
     left: 50%;
-    font-size: 1.2em;
-    margin-left: -7.75em;
+    margin-left: -8.9375em;
     color: black;
     position: absolute;
-    font-family: "Tangier Medium";
+}
+
+.brandH1 {
+    font-family: 'Rouge-Script';
+    font-size: 2.8em;
+    margin: 0;
+
 }
 
 #byFlo {
-    top: 24%;
-    left: 47%;
+    top: 25%;
+    left: 45%;
     font-size: 1em;
     color: white;
     position: absolute;
@@ -314,16 +332,16 @@ nav a:hover {
 
 /* SECTION ABOUT */
 
-/*#about {
-    position: relative;
-    
-}*/
+#about {
+        background-color: rgba(232,231,215, 1);
+}
 
 #about-div-img {
     position: relative;
+    display: inline-block;
     width: 6em;
-    top: -6.5em;
-    left: 7.2em;
+    top: -1em;
+    left: 3em;
 }
 
 #about-img {
@@ -335,12 +353,14 @@ nav a:hover {
 #about-text {
     quotes: "\201C" "\201D" "\2018" "\2019";
     display: inline-block;
-    top: -6.5em;
     position: relative;
     text-align: justify;
     font-size: 1em;
 }
 
+#about-text p {
+    margin: 1em 40px;
+}
 
 /* SECTION PRODUCT */
 
