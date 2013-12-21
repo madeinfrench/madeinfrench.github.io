@@ -13,11 +13,9 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="icon" type="image/png" href="favicon.png" />
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize_min.css">
+        <link rel="stylesheet" href="css/main_min.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/vendor/TweenMax.min.js"></script>
-        <script src="js/plugins/CSSPlugin.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -26,93 +24,38 @@
 
         <!-- Add your site or application content here -->
         <div class="wrapper">
-    		<header>
-            <div>
-                <a href class="mobile mobile-menu-opener">&#9776;</a>
-        		<nav id="nav-menu">
-    	       		<ul>
-                        <li class="mobile"><a href="#" data-id="mobile-menu-closer" class="mobile-menu-closer">&#9776;</a></li>
-        				<li class="active"><a href="#home"><span>Home</span></a></li>
-        				<li><a href="#about"><span>About</span></a></li>
-                        <li><a href="#services"><span>Services</span></a></li>
-        				<!-- <li><a href="#products"><span>Products</span></a></li> -->
-                        <li><a href="#contact"><span>Contact</span></a></li>
-                    </ul>
-                </nav>
-            </div>
-            </header>
-		
             <section class="section" id="home">
     			<div id="img-home-background">
                     <div class="img-wrapper">
                         
                     </div>
                 </div>
+            
                 <div id="brand" class="boxTransparentWhite">
                     <h1 class="brandH1"><strong>Made in French</strong></h1>
+                     <span id="byFlo">by Floriane Autenzio</span>
                 </div>
-                <div id="byFlo">
-                    <p>by Floriane Autenzio</p>
-                </div>
-
                 <div id="brandComment">
                     <h1>Traditional Upholsterer</h1>
                 </div>
-            </section>
-		
-    		<section class="section" id="about">
-                    <h1 class="sectionH1">About</h1>
-                    <div id="about-div-img">
-                        <img id="about-img" src="img/about.jpg"/>
-                    </div>
-        			<div id="about-text">
-                        <blockquote>"Floriane is a French-born qualified upholterer, trained in France in the workroom of Jacques Fayolle (One of the Best Craftsmen of France) where she had the opportunity to improve her professionalism, combining traditional techniques with an experience of the finest sites (working with prestigious and delicate fabrics, restoring national furniture…)."</blockquote>
-                        <p>Since 3 years she is now bringing her "Savoir Faire" in Melbourne.</p>
-                    <div>
-    		</section>
-
-            <section class="section" id="services">
-                <h1 class="sectionH1">Services</h1>
-            </section>
-		
-<!--      		<section class="section" id="products">
-    			<h1 id="title-product">Product</h1>
-                <div id="product-wrap">
-                    <nav id="nav-product">
-                        <ul>
-                            <li><a href="#Lampshade">Lampshade</a></li>
-                            <li><a href="#Seat">Seat</a></li>
-                            <li><a href="#Couch">Couch</a></li>
-                            <li><a href="#BedHead">Bed Head</a></li>
-                        </ul>
-                    </nav>
-                    <div id="product-photo">
-                        <img src="img/products/lampshade_01.jpg">
-                        <img src="img/products/lampshade_02.jpg" class="hidden">
-                    </div> 
-                </div>
-    		</section> -->
-
-    		<section class="section" id="contact">
-                <h1 class="sectionH1">Contact</h1>
-                <p class="contactText">For information or job inquiries please contact <strong>Floriane Autenzio</strong> :</p>
                 <div class="contact-wrapper">
                     <div class="contactBox">
                         <span class="entypo">&#128241;</span>
-                        <p>(+61) 4 67 89 72 83</p>
+                        <span class="contactInfo">(+61) 4 67 89 72 83</span>
                     </div>
                     <div class="contactBox">
-                        <span class="entypo">&#9993;</span>
-                        <p><a href="mailto:floriane@madeinfrench.com.au?Subject=WebContact: ">floriane@madeinfrench.com.au</a></p>
+                        <span class="entypoLetter">&#9993;</span>
+                        <a href="mailto:floriane@madeinfrench.com.au?Subject=WebContact: "><span class="contactInfo">floriane@madeinfrench.com.au</span></a>
                     </div>
                     <div class="contactBox">
                         <a href="https://www.facebook.com/MadeinFrenchMelbourne" target="_blank"><span class="entypoSocial">&#62221;</span></a>
-                        <p>Like my Page</p></div>
-                </div>             
+                <span class="contactInfo">Like my Page</span></div>
+                </div>
+
             </section>
-            <footer>
-                
-			</footer>
+		
+
+          
         </div>
         <!-- End wrapper -->
 
@@ -143,7 +86,7 @@
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+            ga('create','UA-46650099-1', 'madeinfrench.com.au');ga('send','pageview');
         </script>
     </body>
 </html>
