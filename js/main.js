@@ -49,7 +49,7 @@ var HOME = {
 	path:'img/bg/',
 	numImages:0,
 	interv:null,
-	timeout:6000,
+	timeout:4000,
 	active:true
 }
 
